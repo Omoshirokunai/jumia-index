@@ -2,7 +2,7 @@
 import bs4 as bs
 import urllib.request as urlr
 """
-userstring -> jumia.com/catalog/?q={}.format(userstring)
+userstring -> jumia.com/catalog/?q={}.format(userstring) 
 """
 search = "laptops"
 st =["laptops","laptop"]
@@ -39,8 +39,9 @@ def jumia():
         # image = data-src 
     # return(products[0].get("name"))
     return products
-laptops = jumia()
-print(laptops[0])
+# usage:
+# laptops = jumia()
+# print(laptops[0])
 # lap = []
 # for i in laptops:
 #     print(i["name"])
